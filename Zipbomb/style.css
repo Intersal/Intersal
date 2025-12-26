@@ -1,0 +1,31 @@
+@keyframes explode {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.2); }
+}
+@keyframes explodeReverse {
+  0% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+
+
+.bomb {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 10%;
+    height: 10%;
+    animation:explodeReverse 0.5s forwards ease-in-out;
+}
+.bomb:hover {
+  animation: explode 0.5s forwards ease-in-out;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+b {
+  font-weight: bold;
+  color: #ff0000;
+}
