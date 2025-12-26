@@ -1,0 +1,65 @@
+@keyframes wiggle {
+        0% { transform: translate(0, 0)  }
+        25% { transform: translate(5px, 5px)  }
+        50% { transform: translate(0, 0)  }
+        75% { transform: translate(-5px, 5px)  }
+        100% { transform: translate(0, 0)  }
+}
+
+p.wiggle {
+  display: inline-block;
+  animation: wiggle 10ms infinite;
+}
+
+p.wiggle:hover {
+  animation: none;
+}
+
+body {
+    background-color: rgb(0, 0, 0)
+  }
+  
+  p {
+    color: rgb(255, 255, 255);
+  }
+  
+
+  span::before {
+    content: "Sunny ";
+    animation: animate infinite 300ms;
+    padding-left: 10px;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "Omori ";
+    }
+
+    100% {
+        content: "Sunny ";
+    }
+}
+
+p.wavy {
+    animation-name: wavy;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  @keyframes wavy {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -15px;
+    }
+    100% {
+      top: 0px;
+    }
+  
+}
+  

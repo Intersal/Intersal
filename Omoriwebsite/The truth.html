@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>The Truth</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='something.css'>
+    <link rel="icon" type="image/x-icon" href="https://dinopixel.com/preload/0921/SOMETHING-Sprite-from-Omori.png">
+    <script>
+        window.onscroll = function(ev) {
+            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+                var audio = new Audio('something-sound-effect-omori.mp3');
+                audio.load();
+                audio.play().then(function() {
+                
+                }).catch(function(error) {
+                    console.log('Audio playback failed:', error);
+                });
+            }
+        };
+
+        function showImages() {
+    var images = document.querySelectorAll('.hid');
+
+    images.forEach(function(image, index) {
+        setTimeout(function() {
+            image.style.display = 'block';
+        }, index * 500);
+    });
+}
+function hide() {
+    var images = document.querySelectorAll('.show');
+    if (images.length === 0) {
+        console.log('No elements found with the class "show"');
+        return;
+    }
+
+    images.forEach(function(image, index) {
+        setTimeout(function() {
+            image.style.display = 'none';
+        }, index * 500);
+    });
+}
+
+        </script>
+</head>
+<body>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtM9gDP4JHIKNF5gTHWwtWQw3i156sLv8QFQ&s" style="width:100%;height:100%;" onclick="showImages() " class="show">
+    <img class="hid" src="https://i.pinimg.com/564x/a1/fb/6a/a1fb6a10607e28e06d073b321b8dc9f6.jpg" alt="HTML5 Icon" style="width:100%;height:100%; display: none;">
+    <br>
+    <img src="https://i.pinimg.com/564x/ce/b9/21/ceb9213c18e193ebc8eaf3d95c9fa43a.jpg" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhOYDHKXZdu87p3xVnffCQFkidJ8o6fstlw&s" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://i.pinimg.com/474x/85/c1/7c/85c17cfff5a870193eeaa0eb78ea7f10.jpg" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://i.pinimg.com/474x/fd/be/3b/fdbe3b91e0b196d3c5157e4c4ffe2933.jpg" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9X2E6jrlufEyx66sIDsU7Kr0LJe5dWSLqAQ&s" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREOv2TWl7Rek8ceUdgMkrFtFHG0JgeY0MjiZCAjF3mhe_2gD_RIr2fdQEleEefzWHywNk&usqp=CAU" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://i.pinimg.com/474x/cc/c7/4c/ccc74cc79cb9b2d24eb6bb5f5a8b66a3.jpg" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://steamuserimages-a.akamaihd.net/ugc/1845913680370664826/9FD0EF14B7B6BE4461D63DF836B7AD48D8AD108A/" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6yxMwXNtqwQExtfsHg5rXJ8qZ4CdBTzGHwA&s" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://i.pinimg.com/474x/0c/ef/9a/0cef9a9f51139cf4e1013dcb179604f4.jpg" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-fU7cIWAIrpaNAEgi8WPmH8hH0rH96DDtqnKlVTKKBz9j3mB8ic_vv8zKJ57kLbFem6U&usqp=CAU" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://steamuserimages-a.akamaihd.net/ugc/1845913680370761088/AA0388CF04EE0F57F75E16C531D23B90051C4738/" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://steamuserimages-a.akamaihd.net/ugc/1845913680370667922/B7E73631A5CB1E2CD997D602ACE68361E7E3C118/" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROzSfR8ss1b465s_qR8wxciul3upKigX2IfVNFM-LaheYpox-d1O35_vkYC3Cxvg8Pitw&usqp=CAU" alt="HTML5 Icon" style="width:100%;height:100%; display: none;" class="hid">
+    <br>
+    <br>
+    <a href="./something.html" style="width:100%;height:100%; display: none;" class="hid">おやすみ</a>
+    
+</body>
+</html>
