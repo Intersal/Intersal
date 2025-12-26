@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>𒈙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="psy-bg"></div>
+  <div class="datamosh"></div>
+  <div class="psy-overlay"></div>
+  <main>
+    <h1 class="psy-title glitchy" data-text="Its here">Here</h1>
+    <h2 class="glitchy" data-text="Have you ever seen god?">Have you ever seen god?</h2>
+    <p class="psy-text glitchy" data-text="Do you remember what its like">I surely dont hahaha</p>
+    <p class="psy-text glitchy" data-text="DxYTlRD MrXIM LyXrOPn">SqrTTuiRv LkQqRuV LMrSUlOp LyxRoPN</p>
+    <button class="psy-btn glitchy" data-text="EsaCApe">eSacAPe</button>
+    <div class="psy-shapes">
+      <div class="circle"></div>
+      <div class="triangle"></div>
+      <div class="square"></div>
+      <div class="circle"></div>
+      <div class="triangle"></div>
+      <div class="square"></div>
+      <div class="circle"></div>
+      <div class="triangle"></div>
+      <div class="square"></div>
+    </div>
+    <div class="psy-shapes">
+      <div class="circle"></div>
+      <div class="triangle"></div>
+      <div class="square"></div>
+      <div class="circle"></div>
+      <div class="triangle"></div>
+      <div class="square"></div>
+    </div>
+    <h2 class="glitchy" data-text="TuVXQc RuTOt ROTniNg ATyuR Horeus">LkQruS MoTivS UiRtYuvC LksuRlOp Horeus</h2>
+    <marquee scrollamount="40" class="glitchy" data-text="RtUoVKXCQ UpriSigLinsg Uod oyOusev eRver Seasen sgDod">Nosi Gim'igmG afRiagd not dibE cuASe youAS snaosAl saj</marquee>
+    <marquee direction="up" scrollamount="30" class="glitchy" data-text="ARPRsiGn">ARpAinGS</marquee>
+    <marquee direction="down" scrollamount="35" class="glitchy" data-text="Faslsaing">AFlsaing</marquee>ACaSlaSPDSeA oAF TehAS auwuniaOVA eATerSE</marquee>
+    <marquee direction="right" scrollamount="50" class="glitchy" data-text="RASUnsA aWAysAEa sAEAEVaIosALEntESLAy">TShasisa iSA taQuiAWTea thAE eaTeariDE asAWo</marquee>
+    <h2 class="glitchy" data-text="﷽">﷽</h2>
+    <p class="psy-text glitchy" data-text="﷽ GGDo DWouDSL BRsaeaeth ﷽">﷽ DoySAOu AHVEA AFERAaitHE ﷽</p>
+    <h2 class="glitchy" data-text="DAOSANT asyOsu TehAgiNDZ ITSZ SAteraSghE">ASi THInkG iTDA TiS StraNGEAS t</h2>
+    <marquee scrollamount="80" class="glitchy" data-text="!!! !!! !!! !!! !!! !!! !!! !!! !!! !!!">!!! !!! !!! !!! !!! !!! !!! !!! !!! !!!</marquee>
+    <marquee direction="left" scrollamount="70" class="glitchy" data-text="QREODyHA">ETRPFuJS</marquee>
+  </main>
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      const dot = document.createElement('div');
+      dot.className = 'trail-dot';
+      const colors = [
+        '#ff00cc', '#00ff99', '#ffff00', '#3333ff', '#ff6600', '#fff700', '#0ff', '#f0f'
+      ];
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      dot.style.background = `radial-gradient(circle, ${color} 0%, transparent 100%)`;
+      dot.style.left = (e.clientX - 16) + 'px';
+      dot.style.top = (e.clientY - 16) + 'px';
+      document.body.appendChild(dot);
+      setTimeout(() => dot.remove(), 700);
+    });
+
+
+    document.body.addEventListener('click', () => {
+      document.body.classList.add('shake');
+      setTimeout(() => document.body.classList.remove('shake'), 500);
+    });
+
+
+    setInterval(() => {
+      document.querySelector('.psy-overlay').style.filter =
+        `hue-rotate(${Math.random()*360}deg) blur(2px) brightness(1.5)`;
+    }, 200);
+  </script>
+</body>
+</html>
