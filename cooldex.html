@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link id="dynamic-favicon" rel="icon" type="image/png" href="images/icon/earth/fdb2f60c-9f03-4ac3-99c8-604d27dbe6b2-0.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='misc.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const frames = [];
+  const basePath = "images/icon/earth/fdb2f60c-9f03-4ac3-99c8-604d27dbe6b2-";
+  const totalFrames = 36; // 0 → 35
+
+  for (let i = 0; i < totalFrames; i++) {
+    frames.push(`${basePath}${i}.png`);
+  }
+
+  let index = 0;
+  const favicon = document.getElementById("dynamic-favicon");
+
+  setInterval(() => {
+    favicon.href = frames[index];
+    index = (index + 1) % frames.length;
+  }, 100)
+});
+</script>
+
+
+    <script>
+        var titles = [ "I'm so indecisive I couldn't pick a title ", 
+        "The coooooooool website ", 
+        "Place ", 
+        "The Hub ", 
+        "Homepage ", 
+        "Racism Central ", 
+        "I'm not racist ", /* I'm indeed not racist, I like making "racist" jokes as to make fun of people whose only joke is "haha black 'people' :thumbs down::poop: White people :moyai::wine:" */ 
+        "Anti-Clankers ", 
+        "The Website I made which is better than the other less cool lamer website ", 
+        "LGBTQIA+ friendly! (Unless you didn't grow up on spongebob. Then, I don't care if your Black, White, Asian, Gay, Straight, Bi, Demi, Trans or any of that. I hate you and for the sake of others please immediately leave. But if you did I love you! ^^) ", 
+        "Sleep Deprived... ", "Romans or Greeks? (Its Greeks...) ", "What Do You Get When You Cross a Mentally Ill Loner with a Society Who Abandons Him..?......................not me... probably someone else idk ask someone else ", 
+        "Don't inhale the dust, it kills you. ", 
+        "LPC9929 is an interesting guy. The ", ];
+
+        var wisdom = [
+            "Don't go around sniffing everywhere, its weird...",
+            "Please don't snort every white powder you see, it wont make you high- well you might get high in another way if you keep doing it.",
+            "You would rather pee in the sink than to sink in the pee.",
+            "Junior Mints should be a halloween candy.",
+            "Its a touch or be touched world.",
+            "Look for not what you find but for what you seek.",
+            "Shit in urinals.",
+            "Cinnamon Challenge was stupid.",
+            "Don't believe everything on the internet.",
+            "Hey guys, did you know that in terms of",
+            "Hamsters always die in the most insane way, prepare thyself.",
+            "Play Voices of the Void.",
+            "If your struggling to get a partner just start talking to them how you would one of the boys.",
+            "Being gay isn't a disease, even if it was or even still is classified as a mental disorder its not stopping anyone. Horrible connection but Alcohol is classified as a 'A COMMON AND POTENT NEUROTOXIN' and yet you don't care.",
+            "Don't get wisdom from the internet.",
+            "Watch Adam SLander.",
+            "Dull knives are more evil than dull swords because they are short and more fitable.",
+            "With enough work and determination; anything is food.",
+            "If you are infertle just eat more candles.",
+            "Old brainrot (mlg meme compilations) will always be better than todays skibidi toilet because nobody took it seriously.",
+            "If its hard, do it easy.",
+            "Wash your hands.",
+        ];
+
+        function settitleran() {
+            return titles[Math.floor(Math.random() * titles.length)];
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let msg = settitleran();
+            let pos = 0;
+
+            function scrollTitle() {
+                document.title = msg.substring(pos) + msg.substring(0, pos);
+                pos = (pos + 1) % msg.length;
+                setTimeout(scrollTitle, 100);
+            }
+
+            scrollTitle();
+        });
+
+        function givewisdom() {
+            let wisd = wisdom[Math.floor(Math.random() * wisdom.length)];
+            document.getElementById("wisdom").textContent = wisd;
+        }
+    </script>
+</head>
+<body class="scanlines">
+    <!-- everything pretty much -->
+<div class="top-container">
+    <!-- wisdom button -->
+<div class="window">
+  <div class="window-header">The Wisdom Button</div>
+  <div class="window-body">
+    <div class="wisdomdiv">
+      <button onclick="givewisdom()" class="wisdombutton">Wisdom</button>
+      <p id="wisdom"></p>
+    </div>
+  </div>
+</div>
+<!-- window bio -->
+<div class="windowbio">
+<div class="container">
+  <div class="top">
+    <span class="dot">^</span>
+    <span class="dot" id="mouthmove">o</span>
+    <span class="dot">^</span>
+  </div>
+  <!-- window mouth moving -->
+<script>
+const mouth = document.getElementById("mouthmove");
+  let isOpen = true;
+
+  setInterval(() => {
+    if (isOpen) {
+      mouth.textContent = "-";
+    } else {
+      mouth.textContent = "o";
+    }
+    isOpen = !isOpen;
+  }, 1000);
+</script>
+<div class="content">
+    <p>
+Hey! My name is Ender or EnderADHD! I'm a Programmer, Fencer, Cook, Musician with maybe a little too many hobbies. You probably couldn't guess but I have ADHD and Autism and no my entire personality doesnt revolve around that, in fact I hate it when people's only personality traits are the things they are diagnosed with. 
+    </p><br>
+    <p>Here are my favorite things!</p>
+    <a id="dropdown-btn" class="button">▼</a>
+    <ul class="helplist" id="dropdown-list">
+        <h3>Games</h3>
+        <li>Voices of the Void</li>
+            <li>ULTRAKILL</li>
+            <li>Phasmophobia</li>
+            <li>Bomb Rush Cyberfunk</li>
+            <li>People Playground</li>
+            <li>Garry's Mod</li>
+            <li>Beat Saber</li>
+            <li>Parappa the Rapper</li>
+            <li>Omori</li>
+            <li>Milk inside/outside a Bag of Milk</li>
+        <h3>Shows</h3>
+            <li>Bee and Puppycat</li>
+            <li>uhhhhhhhh...</li>
+        <h3>Misc</h3>
+            <li><a href="Kasaneteto.html">Kasane Teto</a></li>
+    </ul>
+  </div>
+</div><br>
+<!-- fandom imagery -->
+ <div class="container">
+  <div class="top">
+<p style="
+    color: white;" id="expression">OWO</p>
+  </div>
+<div class="content">
+    <img src="" id="canvas" style="max-width: 150px; max-height: 150px;">
+  </div>
+</div>
+
+<script>
+var imagesArray = [
+    "images/milkchan.png",
+    "images/milkchan2.png",
+    "images/omori.png",
+    "images/omori2.png",
+    "images/parappa.png",
+    "images/parappa2.png",
+    "images/tetoplush.png",
+    "images/tetoplush2.png",
+    "images/votv.png",
+    "images/votv2.png"
+];
+
+    function displayImage() {
+      var num = Math.floor(Math.random() * imagesArray.length);
+      document.getElementById("canvas").src = imagesArray[num];
+    }
+
+var expressions = [
+    "(˶ᵔ ᵕ ᵔ˶)",
+    "ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧",
+    "(˶ˆᗜˆ˵)",
+    "( ˶°ㅁ°) !!",
+    "(˶˃ ᵕ ˂˶)",
+    "₍^. .^₎⟆",
+    "ദ്ദി(ᵔᗜᵔ)",
+    "ᕙ(  •̀ ᗜ •́  )ᕗ",
+    "(¬_¬')",
+    "(ᵕ—ᴗ—)",
+    "٩(^ᗜ^ )و ´-"
+]
+
+function expressionRan() {
+    var num = Math.floor(Math.random() * expressions.length);
+    document.getElementById("expression").textContent = expressions[num];
+}
+    expressionRan()
+    displayImage()
+</script>
+</div>
+    <div id="container" class="mewo">
+        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com%2Fimage%2F9e938bfe0919d8a.png&f=1&nofb=1&ipt=c3c12c454f01348322fd46b8cfef9c7652708fe03b724a66f7ab23c0b99e65bb"
+             width="20%" height="20%" id="track1" alt="play button" class="play" style="position: relative;" class="interactable">
+    </div>
+    <script>
+        const audioElement = new Audio("mewo.ogg");
+        audioElement.autoplay = true;
+        document.querySelector(".play").addEventListener("click", () => {
+            audioElement.play();
+        });
+    </script>
+<!-- dropdown javascript -->
+    <script>
+          const btn = document.getElementById("dropdown-btn");
+  const list = document.getElementById("dropdown-list");
+
+  btn.addEventListener("click", () => {
+    if (list.style.display === "none" || list.style.display === "") {
+      list.style.display = "block";
+      btn.textContent = "▲";
+    } else {
+      list.style.display = "none";
+      btn.textContent = "▼";
+    }
+  });
+
+function hidestart() {
+  list.style.display = "none";
+}
+hidestart();
+    </script>
+
+
+<div class="windowproj">
+<div class="container">
+  <div class="top">
+    <span class="dot">0</span>
+    <span class="dot">~</span>
+    <span class="dot">0</span>
+  </div>
+<div class="content">
+    <p>Here are some projects I'm okay with :D</p>
+    <table style="width: 60%; margin: 0 auto; text-align: center;" class="projecttable">
+    <tr>
+        <th>Project</th>
+        <th>Preview</th>
+    </tr>
+    <tr>
+        <td>Jumpstyle</td>
+        <td>
+            <a href="./Jumpstyle/index.html" target="_blank">
+                <img class="project" src="./Jumpstyle/icon.png" alt="Jumpstyle Project" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>Zipbomb</td>
+        <td>
+            <a href="./Zipbomb/index.html" target="_blank">
+                <img class="project" src="./Zipbomb/icon.jpg" alt="Zipbomb Project" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+        <tr>
+        <td>Demonstration Website</td>
+        <td>
+            <a href="./Thing/index.html" target="_blank">
+                <img class="project" src="./Thing/icon.png" alt="Demonstration Project" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+            <tr>
+        <td>Psych <b>Epilepsy warning!!</b></td>
+        <td>
+            <a href="./psech/psych.html" target="_blank">
+                <img class="project" src="./psech/icon.png" alt="Psych" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+                <tr>
+        <td>Omori <b>Spoilers!</b></td>
+        <td>
+            <a href="./Omoriwebsite/index.html" target="_blank">
+                <img class="project" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9CAXTbHN79Ze_NE5cjqvhyCLv7SWfVGhpw&s" alt="Omori" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>Place</td>
+        <td>
+            <a href="./Place/index.html" target="_blank">
+                <img class="project" src="./Place/icon.png" alt="Place" style="max-width: 100px;">
+            </a>
+        </td>
+    </tr>
+</table>
+</div>
+</div>
+<br>
+<div class="win98popup shadow" id="win98popup">
+      <div class="bar">
+        <p>Hey!</p>
+        
+        <button class="shadow" onclick="document.getElementById('win98popup').style.display = 'none';">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8px" height="7px" viewBox="0 0 8 7" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M1 6V5h1V4h1V3h2v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1zm0-4V1H0V0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H2V2H1z"/></svg>
+          </button>
+          
+      </div>
+      <section class="window98" id="windows98text">
+        <p>Go to a more interesting place?</p>
+      </section>
+      <div class="buttons">
+        <button class="shadow" onclick="window.open('interesting.html', '_blank');"><img src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt="" width="66.9" height="15" class="win98"><p><u>Y</u>es</p></button>
+        <button class="shadow" onclick="document.getElementById('windows98text').textContent = ':(';"><img src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt="" width="66.9" height="15" class="win98"><p><u>N</u>o</p></button>
+        <button class="shadow" onclick="document.getElementById('win98popup').style.display = 'none';"><img src="https://raw.githubusercontent.com/mbledkowski/win98popup/master/outline.svg" alt="" width="66.9" height="15" class="win98"><p>Cancel</p></button>
+      </div>
+    </div>
+        <!--  add music -->
+        <div class="win98popup shadow" style="position: fixed; bottom: 0px; left: 0px; z-index: 1000;" id="musicpopup">
+  <div class="bar">
+    <p>Music Player!</p>
+        <button class="shadow" onclick="minimize98(this)">
+        <img src="images/minimize.png" width="8px" height="3px">
+        </button>
+  </div>
+  <section id="musicplayer">
+    <iframe src="Music/musicplayer.html" 
+        width="265" height="118">
+</iframe>
+  </section>
+</div>
+
+<script>
+function minimize98(button) {
+  const popup = button.closest('.win98popup');
+  popup.classList.toggle('minimized');
+}
+</script>
+
+</body>
+</html>
