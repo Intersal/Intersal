@@ -1,0 +1,165 @@
+body{
+  background-color: #c2c6ca;
+  color: #000000;
+  font-family: "Microsoft Sans Serif", sans-serif;
+}
+#myProgress {
+  width: 240px;
+   background-color: #404e5b; 
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#myBar {
+  width: 0%;
+  height: 2px;
+  background-color: #0080ff;
+  border-radius: 4px;
+}
+
+.logo {
+  fill: red;
+}
+
+.btn-action{
+  cursor: pointer;
+  padding-top: 4px;
+  width: 18px;
+}
+
+.btn-ctn, .infos-ctn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infos-ctn{
+padding-top: 8px;
+}
+
+.btn-ctn > div {
+ padding: 1px;
+ margin-top: 6px;
+ margin-bottom: 6px;
+}
+
+.infos-ctn > div {
+ margin-bottom: 3px;
+ color: #000000;
+}
+
+.first-btn{
+  margin-left: 1px;
+}
+
+.duration{
+  margin-left: 3px;
+}
+
+.title{
+  margin-left: 3px;
+  width: 120px;
+  text-align: center;
+}
+
+.player-ctn{
+  width: 240px;
+  background-color: #c2c6ca;
+  margin:auto;
+  margin-top: 20px;
+}
+
+.playlist-track-ctn{
+  display: flex;
+  background-color: #94979a;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.playlist-track-ctn > div{
+  margin:3px;
+}
+.playlist-info-track{
+  width: 80%;
+}
+.playlist-info-track,.playlist-duration{
+
+
+  color: #000000;
+  font-size: 9px;
+  pointer-events: none;
+}
+.playlist-ctn {
+  width: auto;
+  height: 35px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #e0e0e0;
+  padding: 3px;
+  margin: 8px auto 0;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  scroll-behavior: smooth;
+}
+
+/* Chrome */
+.playlist-ctn::-webkit-scrollbar {
+  width: 6px;
+}
+
+.playlist-ctn::-webkit-scrollbar-track {
+  background: #c2c6ca;
+  border-radius: 4px;
+}
+
+.playlist-ctn::-webkit-scrollbar-thumb {
+  background-color: #0080ff;
+  border-radius: 4px;
+  border: 1px solid #c2c6ca00;
+}
+
+/* Firefox */
+.playlist-ctn {
+  scrollbar-width: thin;
+  scrollbar-color: #0080ff #c2c6ca00;
+}
+
+
+.active-track{
+  background: #4d4d4d;
+  color: #000000 !important;
+  font-weight: bold;
+  
+}
+
+.active-track > .playlist-info-track,.active-track >.playlist-duration,.active-track > .playlist-btn-play{
+  color: #7fa9d3 !important;
+}
+
+
+.playlist-btn-play{
+  pointer-events: none;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.fas{
+  color: #000000;
+  font-size: 12px;
+}
+.volume-ctn {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.volume-ctn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 1000;
+  margin: 0;
+}
+
+#volumeSlider {
+  width: 60px;
+  cursor: pointer;
+  margin: 0;
+}
