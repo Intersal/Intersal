@@ -9,6 +9,8 @@ CSS: intermediate
 
 Javascript: Intermediate
 
+C++: Intermediate
+
 Lua: Dog could do better
 
 python: Proficient
@@ -29,3 +31,4 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
