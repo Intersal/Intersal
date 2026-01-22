@@ -1,34 +1,9 @@
-## Hello, I am programmer guy
-I'm not the best at programming but I can get around.
+# Intersal
+Hello, my name is Intersal or Ender and I love programming.
 
-Programming languages proficiency
+I'm very good at Python.
+I'm intermediate at HTML CSS and JS
+I'm decent at C++
+I'm okay at Lua
 
-HTML: proficient
-
-CSS: intermediate
-
-Javascript: Intermediate
-
-C++: Intermediate
-
-Lua: Dog could do better
-
-python: Proficient
-
-Thats it bye
-
-<!--
-**EnderADHD/EnderADHD** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
+I'll put mostly everything on my github profile because without all the projects on here being open source I wouldn't have learned so much.
