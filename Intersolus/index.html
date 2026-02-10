@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Intersolus</title>
+    <link rel="stylesheet" href="static/main.css" />
+    <link rel="icon" type="image/x-icon" href="static/icon.png">
+</head>
+<body>
+    <div class="header-content">
+    <img src="static/logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div class="view-options">
+        <button onclick="setView('grid')"><img src="static/gridview.png" width="24" height="24"></button>
+        <button onclick="setView('list')"><img src="static/listview.png" width="24" height="24"></button>
+    </div>
+
+    <div id="album-container" class="view-grid">
+
+    
+        <div class="album" onclick="toggleAlbum(this)">
+            <h2>Jeff Rosenstock - We Cool?</h2>
+            
+            
+                <img src="static/2015 - We Cool_cover.jpg" alt="Album cover" class="Albumcover">
+            
+            
+            <div class="arrow">▼</div>
+            
+            <ul class="track-list">
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Get Old Forever</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 01 Get Old Forever.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 01 Get Old Forever.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">You, In Weird Cities</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 02 You, In Weird Cities.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 02 You, In Weird Cities.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Novelty Sweater</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 03 Novelty Sweater.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 03 Novelty Sweater.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Nausea</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 04 Nausea.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 04 Nausea.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Beers Again Alone</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 05 Beers Again Alone.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 05 Beers Again Alone.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">I'm Serious, I'm Sorry</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 06 I'm Serious, I'm Sorry.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 06 I'm Serious, I'm Sorry.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Hey Allison!</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 07 Hey Allison!.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 07 Hey Allison!.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Polar Bear Or Africa</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 08 Polar Bear Or Africa.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 08 Polar Bear Or Africa.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Hall Of Fame</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 09 Hall Of Fame.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 09 Hall Of Fame.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">All Blissed Out</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 10 All Blissed Out.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 10 All Blissed Out.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">The Lows</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 11 The Lows.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 11 The Lows.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Darkness Records</span>
+                    <audio controls>
+                        <source src="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 12 Darkness Records.flac">
+                    </audio>
+                    <a href="Albums/2015 - We Cool/Jeff Rosenstock - We Cool- - 12 Darkness Records.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+            </ul>
+        </div>
+    
+        <div class="album" onclick="toggleAlbum(this)">
+            <h2>Jeff Rosenstock - NO DREAM</h2>
+            
+            
+                <img src="static/2020 - NO DREAM_cover.jpg" alt="Album cover" class="Albumcover">
+            
+            
+            <div class="arrow">▼</div>
+            
+            <ul class="track-list">
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">NO TIME</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-01 - Jeff Rosenstock - NO TIME.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-01 - Jeff Rosenstock - NO TIME.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Nikes (alt)</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-02 - Jeff Rosenstock - Nikes (alt).flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-02 - Jeff Rosenstock - Nikes (alt).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Scram!</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-03 - Jeff Rosenstock - Scram!.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-03 - Jeff Rosenstock - Scram!.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">N O D R E A M</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-04 - Jeff Rosenstock - N O D R E A M.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-04 - Jeff Rosenstock - N O D R E A M.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">State Line</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-05 - Jeff Rosenstock - State Line.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-05 - Jeff Rosenstock - State Line.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">f a m e</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-06 - Jeff Rosenstock - f a m e.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-06 - Jeff Rosenstock - f a m e.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Leave It in the Sun</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-07 - Jeff Rosenstock - Leave It in the Sun.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-07 - Jeff Rosenstock - Leave It in the Sun.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">The Beauty of Breathing</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-08 - Jeff Rosenstock - The Beauty of Breathing.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-08 - Jeff Rosenstock - The Beauty of Breathing.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Old Crap</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-09 - Jeff Rosenstock - Old Crap.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-09 - Jeff Rosenstock - Old Crap.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">***BNB</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-10 - Jeff Rosenstock -    BNB.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-10 - Jeff Rosenstock -    BNB.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Monday at the Beach</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-11 - Jeff Rosenstock - Monday at the Beach.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-11 - Jeff Rosenstock - Monday at the Beach.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Honeymoon Ashtray</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-12 - Jeff Rosenstock - Honeymoon Ashtray.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-12 - Jeff Rosenstock - Honeymoon Ashtray.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Ohio Tpke</span>
+                    <audio controls>
+                        <source src="Albums/2020 - NO DREAM/1-13 - Jeff Rosenstock - Ohio Tpke.flac">
+                    </audio>
+                    <a href="Albums/2020 - NO DREAM/1-13 - Jeff Rosenstock - Ohio Tpke.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+            </ul>
+        </div>
+    
+        <div class="album" onclick="toggleAlbum(this)">
+            <h2>Bomb the Music Industry! - Adults!!!: Smart!!! Shithammered!!! And Excited By Nothing!!!!!!!</h2>
+            
+            
+                <img src="static/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)_cover.jpg" alt="Album cover" class="Albumcover">
+            
+            
+            <div class="arrow">▼</div>
+            
+            <ul class="track-list">
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">You Still Believe In Me?</span>
+                    <audio controls>
+                        <source src="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 01 - You Still Believe In Me (FLAC 994 kbps).flac">
+                    </audio>
+                    <a href="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 01 - You Still Believe In Me (FLAC 994 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Planning My Death</span>
+                    <audio controls>
+                        <source src="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 02 - Planning My Death (FLAC 1032 kbps).flac">
+                    </audio>
+                    <a href="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 02 - Planning My Death (FLAC 1032 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Slumlord</span>
+                    <audio controls>
+                        <source src="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 03 - Slumlord (FLAC 952 kbps).flac">
+                    </audio>
+                    <a href="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 03 - Slumlord (FLAC 952 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">All Ages Shows</span>
+                    <audio controls>
+                        <source src="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 04 - All Ages Shows (FLAC 810 kbps).flac">
+                    </audio>
+                    <a href="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 04 - All Ages Shows (FLAC 810 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Big Ending</span>
+                    <audio controls>
+                        <source src="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 05 - Big Ending (FLAC 686 kbps).flac">
+                    </audio>
+                    <a href="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 05 - Big Ending (FLAC 686 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">The First Time I Met Sanawon</span>
+                    <audio controls>
+                        <source src="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 06 - The First Time I Met Sanawon (FLAC 942 kbps).flac">
+                    </audio>
+                    <a href="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 06 - The First Time I Met Sanawon (FLAC 942 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Struggler</span>
+                    <audio controls>
+                        <source src="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 07 - Struggler (FLAC 813 kbps).flac">
+                    </audio>
+                    <a href="Albums/Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! (2010)/Bomb the Music Industry! - Adults!!! - Smart!!! Shithammered!!! And Excited By Nothing!!!!!!! - 07 - Struggler (FLAC 813 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+            </ul>
+        </div>
+    
+        <div class="album" onclick="toggleAlbum(this)">
+            <h2>Will Wood and the Tapeworms - Everything Is A Lot (2020 Remaster)</h2>
+            
+            
+                <img src="static/Everything Is A Lot (2020 Remaster)_cover.jpg" alt="Album cover" class="Albumcover">
+            
+            
+            <div class="arrow">▼</div>
+            
+            <ul class="track-list">
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">6up 5oh Cop-Out (Pro/Con)</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/01 6up 5oh Cop-Out (Pro_Con).flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/01 6up 5oh Cop-Out (Pro_Con).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Skeleton Appreciation Day in Vestal, NY (Bones)</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/02 Skeleton Appreciation Day in Vestal, NY (Bones).flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/02 Skeleton Appreciation Day in Vestal, NY (Bones).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Front Street</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/03 Front Street.flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/03 Front Street.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">¡Aikido! (Neurotic/Erotic)</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/04 ¡Aikido! (Neurotic_Erotic).flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/04 ¡Aikido! (Neurotic_Erotic).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">White Knuckle Jerk (Where Do You Get Off?)</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/05 White Knuckle Jerk (Where Do You Get Off_).flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/05 White Knuckle Jerk (Where Do You Get Off_).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">(Cover This Song) A Little Bit Mine</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/06 (Cover This Song) A Little Bit Mine.flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/06 (Cover This Song) A Little Bit Mine.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Thermodynamic Lawyer, esq, G.F.D</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/07 Thermodynamic Lawyer, esq, G.F.D.flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/07 Thermodynamic Lawyer, esq, G.F.D.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Red Moon</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/08 Red Moon.flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/08 Red Moon.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Lysergide Daydream</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/09 Lysergide Daydream.flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/09 Lysergide Daydream.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">The First Step</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/10 The First Step.flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/10 The First Step.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Jimmy Mushrooms' Last Drink: Bedtime in Wayne, NJ</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/11 Jimmy Mushrooms' Last Drink_ Bedtime in Wayne, NJ.flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/11 Jimmy Mushrooms' Last Drink_ Bedtime in Wayne, NJ.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Chemical Overreaction / Compound Fracture</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/12 Chemical Overreaction _ Compound Fracture.flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/12 Chemical Overreaction _ Compound Fracture.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Everything is a Lot</span>
+                    <audio controls>
+                        <source src="Albums/Everything Is A Lot (2020 Remaster)/13 Everything is a Lot.flac">
+                    </audio>
+                    <a href="Albums/Everything Is A Lot (2020 Remaster)/13 Everything is a Lot.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+            </ul>
+        </div>
+    
+        <div class="album" onclick="toggleAlbum(this)">
+            <h2>Video Days - sungazing</h2>
+            
+            
+                <img src="static/sungazing_cover.jpg" alt="Album cover" class="Albumcover">
+            
+            
+            <div class="arrow">▼</div>
+            
+            <ul class="track-list">
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">35mm</span>
+                    <audio controls>
+                        <source src="Albums/sungazing/01 - 35mm.flac">
+                    </audio>
+                    <a href="Albums/sungazing/01 - 35mm.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Bed</span>
+                    <audio controls>
+                        <source src="Albums/sungazing/02 - Bed.flac">
+                    </audio>
+                    <a href="Albums/sungazing/02 - Bed.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Orange peel</span>
+                    <audio controls>
+                        <source src="Albums/sungazing/03 - Orange peel.flac">
+                    </audio>
+                    <a href="Albums/sungazing/03 - Orange peel.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">When you loved me</span>
+                    <audio controls>
+                        <source src="Albums/sungazing/04 - When you loved me.flac">
+                    </audio>
+                    <a href="Albums/sungazing/04 - When you loved me.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">School</span>
+                    <audio controls>
+                        <source src="Albums/sungazing/05 - School.flac">
+                    </audio>
+                    <a href="Albums/sungazing/05 - School.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Bleached</span>
+                    <audio controls>
+                        <source src="Albums/sungazing/06 - Bleached.flac">
+                    </audio>
+                    <a href="Albums/sungazing/06 - Bleached.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Sometimes</span>
+                    <audio controls>
+                        <source src="Albums/sungazing/07 - Sometimes.flac">
+                    </audio>
+                    <a href="Albums/sungazing/07 - Sometimes.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+            </ul>
+        </div>
+    
+        <div class="album" onclick="toggleAlbum(this)">
+            <h2>Glass beach - the first glass beach album</h2>
+            
+            
+                <img src="static/the first glass beach album_cover.jpg" alt="Album cover" class="Albumcover">
+            
+            
+            <div class="arrow">▼</div>
+            
+            <ul class="track-list">
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">classic j dies and goes to hell part 1</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/1. classic j dies and goes to hell part 1.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/1. classic j dies and goes to hell part 1.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">dallas</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/10. dallas.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/10. dallas.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">(rat castle)</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/11. (rat castle).flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/11. (rat castle).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">planetarium</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/12. planetarium.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/12. planetarium.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">soft!!!!!!</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/13. soft!!!!!!.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/13. soft!!!!!!.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">yoshi's island</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/14. yoshi's island.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/14. yoshi's island.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">orchids</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/15. orchids.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/15. orchids.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">bedroom community</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/2. bedroom community.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/2. bedroom community.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">(forever?????????)</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/3. (forever_________).flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/3. (forever_________).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">bone skull</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/4. bone skull.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/4. bone skull.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">neon glow</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/5. neon glow.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/5. neon glow.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">cold weather</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/6. cold weather.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/6. cold weather.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">calico</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/7. calico.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/7. calico.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">glass beach</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/8. glass beach.flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/8. glass beach.flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">(blood rivers)</span>
+                    <audio controls>
+                        <source src="Albums/the first glass beach album/9. (blood rivers).flac">
+                    </audio>
+                    <a href="Albums/the first glass beach album/9. (blood rivers).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+            </ul>
+        </div>
+    
+        <div class="album" onclick="toggleAlbum(this)">
+            <h2>Jeff Rosenstock - WORRY.</h2>
+            
+            
+                <img src="static/WORRY. (2016)_cover.jpg" alt="Album cover" class="Albumcover">
+            
+            
+            <div class="arrow">▼</div>
+            
+            <ul class="track-list">
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Pietro, 60 Years Old</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 07 - Pietro, 60 Years Old (FLAC 865 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 07 - Pietro, 60 Years Old (FLAC 865 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">We Begged 2 Explode</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 01 - We Begged 2 Explode (FLAC 864 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 01 - We Begged 2 Explode (FLAC 864 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Pash Rash</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 02 - Pash Rash (FLAC 936 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 02 - Pash Rash (FLAC 936 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Festival Song</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 03 - Festival Song (FLAC 995 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 03 - Festival Song (FLAC 995 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Staring Out the Window at Your Old Apartment</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 04 - Staring Out the Window at Your Old Apartment (FLAC 902 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 04 - Staring Out the Window at Your Old Apartment (FLAC 902 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Wave Goodnight to Me</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 05 - Wave Goodnight to Me (FLAC 1018 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 05 - Wave Goodnight to Me (FLAC 1018 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">To Be a Ghost…</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 06 - To Be a Ghost… (FLAC 891 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 06 - To Be a Ghost… (FLAC 891 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">I Did Something Weird Last Night</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 08 - I Did Something Weird Last Night (FLAC 985 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 08 - I Did Something Weird Last Night (FLAC 985 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Blast Damage Days</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 09 - Blast Damage Days (FLAC 991 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 09 - Blast Damage Days (FLAC 991 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Bang on the Door</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 10 - Bang on the Door (FLAC 1030 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 10 - Bang on the Door (FLAC 1030 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Rainbow</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 11 - Rainbow (FLAC 1029 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 11 - Rainbow (FLAC 1029 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Planet Luxury</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 12 - Planet Luxury (FLAC 1040 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 12 - Planet Luxury (FLAC 1040 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">HELLLLHOOOOLE</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 13 - HELLLLHOOOOLE (FLAC 907 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 13 - HELLLLHOOOOLE (FLAC 907 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">June 21st</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 14 - June 21st (FLAC 1017 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 14 - June 21st (FLAC 1017 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">The Fuzz</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 15 - The Fuzz (FLAC 964 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 15 - The Fuzz (FLAC 964 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">…While You’re Alive</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 16 - …While You’re Alive (FLAC 973 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 16 - …While You’re Alive (FLAC 973 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+                <li onclick="event.stopPropagation()">
+                    <span class="track-title">Perfect Sound Whatever</span>
+                    <audio controls>
+                        <source src="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 17 - Perfect Sound Whatever (FLAC 1031 kbps).flac">
+                    </audio>
+                    <a href="Albums/WORRY. (2016)/Jeff Rosenstock - WORRY. - 17 - Perfect Sound Whatever (FLAC 1031 kbps).flac">
+                        <img src="static/download.png" alt="Download">
+                    </a>
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    </div> 
+
+
+    <script>
+        function toggleAlbum(element) {
+            element.classList.toggle("open");
+        }
+
+        function setView(viewType) {
+            const container = document.getElementById('album-container');
+            if (!container) {
+                console.error("Album container not found!");
+                return;
+            }
+            if (viewType === 'grid') {
+                container.classList.remove('view-list');
+                container.classList.add('view-grid');
+            } else if (viewType === 'list') {
+                container.classList.remove('view-grid');
+                container.classList.add('view-list');
+            }
+        }
+    </script>
+</body>
+</html>
