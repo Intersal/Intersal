@@ -6,7 +6,7 @@
     <title>{int}</title>
     <link id="favicon" rel="icon" type="image/png" href="images/icon/earth/fdb2f60c-9f03-4ac3-99c8-604d27dbe6b2-0.png">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-
+    <link rel="stylesheet" href="main.css">
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -30,14 +30,58 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     <script>
-        var rtext = [ // i'll put some stuff whether it be lyrics, advice or just something funny.
-            "k"
-        ];
+        // Placeholder array; random text will be set after DOM is ready
+        var rtext = ["k"];
+    </script>
+  </head>
+  <body>
+    <h1 class="headermainname">INTERSAL</h1>
 
-        function rtextfunc() {
-            let rtext = ratext[Math.floor(Math.random() * rtext.length)];
-            document.getElementById("random").textContent = rtext;
-        }
+    <div id="random"></div>
+
+    <br><br>
+    <p id="pillar">Here are what you could say are the three pillars of myself.
+      <span class="tooltip" tabindex="0">*
+        <span class="tooltip-text">Its more of my passions and hobbies, but they have influenced me greatly.</span>
+      </span>
+    </p>
+    <section class="layout-row">
+      <article class="tile">
+        <h2><a href="Music/index.html">Music</a></h2>
+        <p>I am a massive music nerd and lover. I spend countless hours discovering new artists and genres, and I'm always excited to share my favorite tracks and albums with others and hear others' recommendations. My favorite artist by far is Jeff Rosenstock <span class="tooltip" tabindex="0">*
+        <span class="tooltip-text"><img src="images/jeff.png" alt="Jeff Rosenstock"></span>
+      </span> and everything he does.</p>
+      </article>
+      <article class="tile">
+        <h2>Programming</h2>
+        <p>I love programming very very much. And just in general Computer Science as a whole. I've always loved research. I started with magic as a small child and worked my way to chemistry and hit a wall. Computer Science, because it is man made, is entirely researchable. Meaning there is always an answer to every question.</p>
+      </article>
+      <article class="tile">
+        <h2>Media/Shows</h2>
+        <p>I love consuming all kinds of media and watching shows. Some of my favorites include FLCL, Monogatari Series, and gdgd fairies.<span class="tooltip" tabindex="0">*
+        <span class="tooltip-text">If you can't tell I love anime.</span>
+      </span></p>
+      </article>
+    </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const texts = [
+        "You don't own me! You don't own me!",
+        "Smile big, hug bigger, talk big, act bigger stop judging, do something, shut the fuck up, do something!",
+        "Stop singin' it! Stop singin' it! You're too serious! How can you crack a smile if you can't laugh at yourself?",
+        "Oh, I will be there kicking, fighting, beating, screaming \"There's no fucking way I'm ever letting go of you!\"",
+        "They want you to be a ghost",
+        "When love is running wild on the diamond sea"
+    ];
+        const el = document.getElementById('random');
+        function pick() { el.textContent = texts[Math.floor(Math.random()*texts.length)]; }
+        pick();
+      });
     </script>
 
-<p>I'm fully reworking this</p>
+
+
+
+  </body>
+</html>
