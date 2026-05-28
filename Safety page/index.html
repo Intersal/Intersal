@@ -1,0 +1,244 @@
+<!-- Hey! In case you don't know really how to code. Don't worry I will be commenting the javascript code on line 60-126 to explain what it does to calm your nerves -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internet Safety Demo</title>
+
+  <style>
+    body {
+      background: #0d1117;
+      color: #00ff88;
+      font-family: monospace;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #ff5555;
+    }
+
+    #info {
+      margin-top: 20px;
+      white-space: pre-wrap;
+      line-height: 1.6;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+        padding: 24px;
+        flex: 1 1 260px;
+     min-width: 240px;
+    }
+
+    .section {
+  border: 2px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.section h2 {
+  color: #ff5555;
+  margin-top: 0;
+}
+
+.divider {
+  height: 2px;
+  background: rgba(255,255,255,0.1);
+  margin: 30px 0;
+}
+  </style>
+</head>
+<body>
+
+<h1>BOO!</h1>
+
+<div id="info">Please don't be scared!</div>
+
+<script>
+// This is an async function.
+// "async" means the function can wait for things like internet requests
+// without freezing the whole webpage.
+async function runDemo() {
+
+  // Finds the HTML element with id="info"
+  // We will later put text inside this box.
+  const info = document.getElementById("info");
+
+  // "try" means:
+  // "Attempt this code, and if something breaks, go to catch"
+  try {
+
+    // Sends a request to ipapi.co
+    // This website returns information about the visitor's IP address.
+    const res = await fetch("https://ipapi.co/json/");
+
+    // Converts the response into usable JSON data
+    // JSON is basically structured text/data.
+    const data = await res.json();
+
+    // Creates a big text block using data from the API.
+    // The ${} syntax inserts variables into the text.
+    let text = `
+IP ADDRESS: ${data.ip}
+
+APPROXIMATE LOCATION:
+${data.city}, ${data.region}, ${data.country_name}
+
+ISP:
+${data.org}
+
+TIMEZONE:
+${data.timezone}
+
+BROWSER:
+${navigator.userAgent}
+
+SCREEN:
+${screen.width} x ${screen.height}
+`;
+
+    // Checks if the browser supports geolocation
+    // (GPS/location permission stuff)
+    if ("geolocation" in navigator) {
+
+      // Asks the user for location access.
+      navigator.geolocation.getCurrentPosition(
+
+        // This runs if the user clicks "Allow"
+        (position) => {
+
+          // Adds GPS coordinates onto the text
+          text += `
+
+PRECISE GPS LOCATION:
+Latitude: ${position.coords.latitude}
+Longitude: ${position.coords.longitude}
+`;
+
+          // Places all the text inside the HTML element
+          info.textContent = text;
+        },
+
+        // This runs if the user denies GPS permission
+        // or if location fails.
+        (error) => {
+
+          // Adds an error message to the text
+          text += `
+
+GPS ACCESS:
+Denied or unavailable
+Reason: ${error.message}
+`;
+
+          // Displays the text on the page
+          info.textContent = text;
+        }
+      );
+
+    } else {
+
+      // Runs if the browser does not support geolocation
+      text += "\nGeolocation not supported.";
+
+      // Displays the text
+      info.textContent = text;
+    }
+
+  } catch (err) {
+
+    // If anything inside the try block crashes,
+    // this code runs instead.
+
+    // Shows the error on the webpage
+    info.textContent = "Error:\n" + err.message;
+
+    // Also prints the error into the browser console
+    console.error(err);
+  }
+}
+
+// Actually starts/runs the function
+runDemo();
+</script>
+<p>I know it may seem like I stole all your information, but I'm only demonstrating how easy it is for websites to collect personal information. <a href="view-source:" target="_blank">Check for yourself (Source Code)</a></p>
+<p>Big corpos want you to feel safe, they want you to think that they care about your privacy.</p>
+<p>But the truth is, they just want to make money off of you. But you aren't entirely powerless. In this page I will tell you about some of the things you can do to protect yourself online.</p>
+
+<div class="divider"></div>
+
+<div class="section">
+  <h2>Why This Matters</h2>
+
+  <p>
+    Privacy is a fundamental right, and protecting it is essential for maintaining our freedom and autonomy in the digital age. When we share personal information online, we risk exposing ourselves to identity theft, financial fraud, and other forms of cybercrime. Additionally, our data can be used to manipulate us through targeted advertising and misinformation campaigns. By understanding the risks and taking steps to protect our privacy, we can safeguard our personal information and maintain control over our digital lives.
+  </p>
+
+  <p>
+    Do you want to be a puppet?
+  </p>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <h2>OPSEC?</h2>
+
+  <p>OPSEC or Operational Security is the practice of protecting sensitive information from being discovered by adversaries.</p>
+  <p>Something thats very important to know is that OPSEC is not just about technology, but also about behavior and awareness.</p>
+  <p>Also keep in mind that OPSEC is linear. The more anonymous you want to be, the more you sacrifice convenience.</p>
+  <p>Here is a graph to illustrate:</p>
+    <a href="https://medium.com/@scorpius_55528/your-breezy-handbook-to-digital-privacy-tools-3cbe42ee1331" target="_blank">
+      <img src="convenience.png" alt="OPSEC Graph" style="width: 100%; max-width: 600px; margin-top: 20px;">
+    </a>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <h2>VPNs & Privacy</h2>
+
+  <p>
+    VPNs are often marketed as complete privacy solutions,
+    but they mainly protect traffic between you and the VPN provider.
+  </p>
+
+  <p>
+    A VPN can still see your traffic unless it is encrypted end-to-end.
+    Using a bad VPN simply shifts trust from your ISP to the VPN company.
+  </p>
+
+  <p>
+    Some VPN companies have exaggerated marketing claims,
+    which is why researching providers matters.
+  </p>
+
+<p>There is only two VPN's that I would even consider using, and those are Mullvad and ProtonVPN.</p> 
+<p>Mullvad is a VPN that is based in Sweden, and they have a strict no-logs policy. They also accept anonymous payments (That means you can pay through cryptocurrencies or card or even mail them cash. Or if you really want to, you can hand them cash directly at their head quarters.), and they have a good reputation in the privacy community. They are not perfect, but they are one of the best options out there. They also cost 5 euros a month.</p> 
+<p>ProtonVPN is a VPN that is based in Switzerland, and they also have a strict no-logs policy. They are also a good option, but they are not as good as Mullvad. They also have a free plan, but it is very limited and not recommended for privacy. I also personally don't trust them as they are free.</p>
+</div>
+
+<div class="divider"></div>
+
+<div class="section">
+  <h2>Browser Fingerprinting</h2>
+
+  <p>
+    Browser fingerprinting is a technique used to track and identify users based on their unique browser and device characteristics. It collects information such as screen resolution, installed fonts, browser plugins, and more to create a unique profile for each user. This allows websites and advertisers to track users across the web without relying on cookies. To protect against browser fingerprinting, users can use privacy-focused browsers, disable JavaScript, or use browser extensions that block tracking scripts.
+  </p>
+  </div>
+
+  <div class="section">
+  <h2>Browsers</h2>
+
+  <p>
+    As most of you already know Browsers like Google Chrome and Microsoft Edge are not good for privacy. They are made by companies that make most of their money through advertising, and they use their browsers to collect data on their users to sell to advertisers. They also have a history of being caught collecting data without user consent. If you want a more private browser, I would recommend using Firefox or Brave. Both of these browsers have a strong focus on privacy and security, and they have features that block trackers and fingerprinting.
+  </p>
+  <p>However if you want an actually good browser, I would suggest using either Librefox (a hardened version of Firefox) or Tor Browser (Even if it was made by the CIA).</p>
+  </div>
+
+</body>
+</html>
