@@ -1,4 +1,3 @@
 # Intersal
-I like programming...
-
-I guess I play piano too..
+# https://intersal.github.io/Intersal/
+My website to rant and share stuff.
