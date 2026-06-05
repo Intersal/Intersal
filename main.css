@@ -20,7 +20,6 @@
 
 @import url("fonts/webfonts/font.css");
 
-/* Use Avara when available. Note: there is no regular (400) Avara file in your webfonts folder, so "non-bold" requires a regular font file or different font. */
 * {
      font-family: 'Avara', system-ui, -apple-system, "Segoe UI", sans-serif;
      background-color: #282829;
@@ -102,6 +101,7 @@ body {
      cursor: help;
      color: #f2f2f2;
 }
+
 .tooltip-text {
      visibility: hidden;
      opacity: 0;
@@ -109,21 +109,23 @@ body {
      left: 50%;
      bottom: 120%;
      transform: translateX(-50%) translateY(0);
-     background: rgba(255, 255, 255, 0.08);
-     border: 1px solid rgba(255, 255, 255, 0.12);
+     background: #1e1e1f; 
+     border: 1px solid rgba(255, 255, 255, 0.15);
      color: #f7f7f7;
      padding: 10px 14px;
      white-space: nowrap;
      pointer-events: none;
      transition: opacity 0.2s ease, transform 0.2s ease;
-     z-index: 1;
+     z-index: 100;
 }
+
 .tooltip:hover .tooltip-text,
 .tooltip:focus-within .tooltip-text {
      visibility: visible;
      opacity: 1;
      transform: translateX(-50%) translateY(-6px);
 }
+
 .tooltip-text::after {
      content: "";
      position: absolute;
@@ -131,9 +133,10 @@ body {
      top: 100%;
      transform: translateX(-50%);
      width: 10px;
-     height: 10px;
-     background: rgba(255, 255, 255, 0.08);
-     border-left: 1px solid rgba(255, 255, 255, 0.12);
-     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+     height: 10px
+     background: #1e1e1f; 
+     border-left: 1px solid rgba(255, 255, 255, 0.15);
+     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
      transform: translateX(-50%) rotate(45deg);
+     margin-top: -5px;
 }

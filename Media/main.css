@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Avara';
+  src: url('../fonts/webfonts/Bold/Avara-Bold.woff2') format('woff2'),
+       url('../fonts/webfonts/Bold/Avara-Bold.woff') format('woff'),
+       url('../fonts/webfonts/Bold/Avara-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avara';
+  src: url('../fonts/webfonts/Black/Avara-Black.woff2') format('woff2'),
+       url('../fonts/webfonts/Black/Avara-Black.woff') format('woff'),
+       url('../fonts/webfonts/Black/Avara-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+     margin: 0;
+     min-height: 100vh;
+     background-color: #282829;
+     color: #9b9b9b;
+     font-family: 'Avara', system-ui, -apple-system, sans-serif;
+     box-sizing: border-box;
+}
+
+*, *:before, *:after {
+     box-sizing: inherit;
+}
+
+a {
+     color: #9b9b9b;
+     text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    z-index: 10;
+}
+nav a:hover {
+    color: #f2f2f2;
+}
+
+
+.header-container {
+    max-width: 1200px;
+    margin: 60px auto 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.headermainname {
+     font-size: 3.5em;
+     font-weight: 900;
+     color: #f2f2f2;
+     line-height: 0.9;
+     margin: 0;
+     text-transform: uppercase;
+}
+
+.header-meta {
+     text-align: right;
+     font-size: 0.85em;
+     letter-spacing: 0.3em;
+     color: #777777;
+     text-transform: uppercase;
+}
+
+
+.layout-row {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 30px;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 20px;
+}
+
+.tile {
+     flex: 1 1 280px;
+     min-width: 260px;
+     border-left: 2px solid #9b9b9b;
+     background: transparent;
+     padding: 0 0 24px 20px;
+     position: relative;
+}
+
+
+.tile:hover {
+     border-left-color: #ba0000;
+}
+
+
+.tile-index {
+    font-size: 0.75em;
+    font-weight: 700;
+    color: #777777;
+    margin-bottom: 8px;
+    display: block;
+    letter-spacing: 0.1em;
+}
+
+.tile h2 {
+     margin: 0 0 8px;
+     font-size: 1.4em;
+     font-weight: 900;
+     color: #f2f2f2;
+     letter-spacing: -0.02em;
+}
+
+.tile p {
+     margin: 0 0 12px 0;
+     line-height: 1.6;
+     color: #c5c5c5;
+     font-family: system-ui, sans-serif;
+     font-size: 0.95em;
+}
+
+.albumcover {
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+    filter: grayscale(40%) contrast(110%);
+    transition: filter 0.2s ease;
+}
+.tile:hover .albumcover {
+    filter: grayscale(0%) contrast(100%);
+}
+
+
+.tooltip {
+     position: relative;
+     display: inline-block;
+     cursor: help;
+     color: #f2f2f2;
+     border-bottom: 1px dotted #777;
+}
+.tooltip-text {
+     visibility: hidden;
+     opacity: 0;
+     position: absolute;
+     left: 50%;
+     bottom: 120%;
+     transform: translateX(-50%);
+     background: #1e1e1f;
+     border: 1px solid rgba(255, 255, 255, 0.15);
+     color: #f7f7f7;
+     padding: 10px 14px;
+     font-size: 0.85em;
+     font-family: system-ui, sans-serif;
+     white-space: nowrap;
+     pointer-events: none;
+     transition: opacity 0.15s ease;
+     z-index: 100;
+}
+.tooltip:hover .tooltip-text {
+     visibility: visible;
+     opacity: 1;
+}

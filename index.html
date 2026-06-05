@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     <script>
-        // Placeholder array; random text will be set after DOM is ready
         var rtext = ["k"];
     </script>
   </head>
@@ -57,8 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>I love programming very very much. And just in general Computer Science as a whole. I've always loved research. I started with magic as a small child and worked my way to chemistry and hit a wall. Computer Science, because it is man made, is entirely researchable. Meaning there is always an answer to every question.</p>
       </article>
       <article class="tile">
-        <h2>Media/Shows</h2>
-        <p>I love consuming all kinds of media and watching shows. Some of my favorites include FLCL, Monogatari Series, and gdgd fairies.<span class="tooltip" tabindex="0">*
+        <h2><a href="Media/index.html">Media/Shows</a></h2>
+        <p>I love consuming all kinds of media and watching shows. Some of my favorites include FLCL, The Monogatari Series, and gdgd fairies.<span class="tooltip" tabindex="0">*
         <span class="tooltip-text">If you can't tell I love anime.</span>
       </span></p>
       </article>
@@ -72,7 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "Stop singin' it! Stop singin' it! You're too serious! How can you crack a smile if you can't laugh at yourself?",
         "Oh, I will be there kicking, fighting, beating, screaming \"There's no fucking way I'm ever letting go of you!\"",
         "They want you to be a ghost",
-        "When love is running wild on the diamond sea"
+        "When love is running wild on the diamond sea",
+        "I would've never met you, man",
+        "NO, WE'RE not slaves to the music. Oh no, WE'RE not slaves to the company, baby. We do what we're born and raised to do and when you create something, you're producing something and that act of producing is the creation of a product."
     ];
         const el = document.getElementById('random');
         function pick() { el.textContent = texts[Math.floor(Math.random()*texts.length)]; }
